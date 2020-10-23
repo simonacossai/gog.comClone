@@ -125,6 +125,12 @@ body{
     z-index: 200;
     left:120px;
 }
+
+.navbar-brand-2{
+    font-size:17px;
+    letter-spacing: 0;
+    font-weight: 500;
+}
 @media(max-width: 992px){
     .visa,
     .check-more{
