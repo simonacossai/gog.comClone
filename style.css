@@ -77,3 +77,60 @@ body{
     color: rgb(185, 3, 185);
     font-weight: 500;
 }
+
+.jumbotron{
+    background-image: url(images/ChildrenOfMorta_Homeland_logo.png);
+    background-size: 100% 100%;
+    color:white;
+    height: 180px;
+    padding:25px;
+    position: relative;
+}
+.jumbotron::after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    
+}
+
+.check-more{
+    border: 2px solid #fff;
+    background: transparent;
+    color: white;
+    font-size:15px;
+    transition: all ease .7s;
+    position: absolute;
+    bottom:50px;
+    right:30px;
+    z-index: 200;
+}
+.check-more:hover{
+    border: 2px solid #fff;
+    background: white;
+    color: black;
+    font-size:15px;
+    transition: all ease .7s;
+}
+.lead{
+    z-index:200;
+}
+.visa{
+    position: absolute;
+    bottom:30px;
+    text-align: center;
+    z-index: 200;
+    left:120px;
+}
+@media(max-width: 992px){
+    .visa,
+    .check-more{
+        display: none;
+    }
+    .jumbotron{
+        padding:40px;
+    }
+}
